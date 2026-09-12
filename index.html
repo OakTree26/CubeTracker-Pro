@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CubeTracker Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!HOME SCREEN>
+    <section id="home-screen" class="screen-active">
+        <header>
+            <h1>CubeTracker Pro</h1>
+            <p class="subtitle">Select A Session To Begin</p>
+        </header>
+
+        <div class="menu-grid">
+            <button class="menu-card" data-cube="2x2">
+                <h3>2x2 Cube</h3>
+                <p>short scrambles (11 moves)</p>
+            </button>
+            <button class="menu-card" data-cube="3x3">
+                <h3>3x3 Cube</h3>
+                <p>Standard WCA regulation</p>
+            </button>
+            <button class="menu-card" data-cube="4x4">
+                <h3>4x4 Cube</h3>
+                <p>Advanced Solving With Wide Moves</p>
+            </button>
+            <button class="menu-card" data-cube="edges">
+                <h3>Edge Placement Focus</h3>
+                <p>Practice For When Only Two Are Placed</p>
+            </button>
+        </div>
+    </section>
+
+    <!TIMER SCREEN>
+    <section id="timer-screen" class="screen">
+        <button id="back-btn" class="back-btn">Back To Menu</button>
+        <header>
+            <h1 id="session-title">3x3 Cube</h1>
+            <div id="scramble-display" class="scramble">Loading Scramble...</div>
+        </header>
+
+        <main class="timer-section">
+            <div id="time-display" class="time">0.00</div>
+            <p id="instruction" class="instruction">Hold Spacebar To Ready, Release To Start.</p>
+        </main>
+
+        <aside class="stats-section">
+            <h2>Recent Solves</h2>
+            <ul id="solve-history"></ul>
+        </aside>
+    </selection>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
